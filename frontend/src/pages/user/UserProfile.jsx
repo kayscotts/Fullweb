@@ -1,18 +1,11 @@
-import {useParams} from "react-router-dom";
+import {useParams,useNavigate} from "react-router-dom";
 import {useLogoutQuery} from "../../redux/api/apiSlice.js";
 const UserProfile=({setIsLogin})=>{
-  
+  const Navigate=useNavigate();
   const {username}=useParams();
   const logout=async ()=>{
-    try{
-    const response=await useLogoutQuery()
-    if(response.data.logout){
-        setIsLogin(false)
-      }
-
-     }
-     catch(error){}
-   }
+     Navigate("/login")
+ }
  return <div><h1>User profile</h1>
   <h2>Email : {username}</h2>
   <h2 onClick={logout}>Logout</h2>

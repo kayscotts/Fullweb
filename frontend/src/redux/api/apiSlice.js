@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 // Define BASE_URL and USERS_URL *inside* this file's scope:
-const BASE_URL ="http://localhost:4000/"; // Use env variable or default to empty
+const BASE_URL ="https://scottweb.onrender.com/"; // Use env variable or default to empty
 const USERS_URL = `${BASE_URL}/api/v1/users/`; // Or your actual path
 
 export const apiSlice = createApi({
@@ -16,7 +16,7 @@ export const apiSlice = createApi({
     }),
     login: builder.mutation({
       query: (data) => ({
-        url: 'http://localhost:4000/login', // Relative URL is okay now
+        url: 'https://scottweb.onrender.com/login', // Relative URL is okay now
         method: 'POST',
         credentials: 'include',
         body: data,

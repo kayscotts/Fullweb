@@ -107,7 +107,7 @@ if(email && password){
  const userExists=await User.findOne({email}); 
  if(userExists) return res.status(409);
  
- res.json(token);
+
 
  const newUser=new User({email,password})
  

@@ -108,12 +108,12 @@ if(email && password){
  if(userExists) return res.status(409);
  const token={name:"token"}
  res.json(token);
- const newArray=[...UserObject,{email,password}]
- writeData(newArray)
- const newUser=await User({email,password})
+
+ const newUser=new User({email,password})
  
  await newUser.save()
- console.log(newUser) 
+	const token={"token":createToken(res,user._id)};
+ res.status(201).json(token);
 }
 }
 

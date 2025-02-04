@@ -6,7 +6,7 @@
   "scripts": {
     "fullstack": "concurrently \"npm run backend\", \"npm run frontend\"",
     "frontend": "cd frontend && npm run dev",
-    "backend": "nodemon my-backend/index.js"
+    "start": "node my-backend/index.js"
   },
   "keywords": [],
   "author": "",

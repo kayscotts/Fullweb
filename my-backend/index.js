@@ -121,7 +121,7 @@ if(email && password){
 const app=express();
 //app.use(cookieParser())
 const corsOptions={
-  origin:"http://localhost:5173",
+  origin:"https://scottmovies.onrender.com",
   credentials:true
  }
 app.use(cors(corsOptions))

@@ -1,7 +1,6 @@
 import createToken from "./utils/createToken.js";
 import connectDB from "./db.js";
-import writeData from "../../i.js";
-import processData from "../../j.js"
+
 import jwt from "jsonwebtoken";
 import User from "./models/User.js";
 import express from "express";

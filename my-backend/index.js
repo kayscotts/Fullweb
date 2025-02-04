@@ -112,7 +112,7 @@ if(email && password){
  const newUser=new User({email,password})
  
  await newUser.save()
-	const token={"token":createToken(res,user._id)};
+	const token={"token":createToken(res,userExists._id)};
  res.status(201).json(token);
 }
 }

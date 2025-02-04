@@ -1,0 +1,26 @@
+.frag{
+ background:red;
+ color:green;
+}
+.movie-container{
+  display:flex;
+  margin-top:5px;
+  overflow:auto;
+
+  scroll-behaviour:smooth;
+}
+.card{
+ border:2px solid purple;
+ margin-right:10px;
+ display:flex;
+ flex-direction:column;
+ width:150px; 
+}
+
+.search{
+ padding:4px;
+ text-align:center; 
+ margin:5px;
+ display:flex;
+ justify-content:center;
+}

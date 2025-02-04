@@ -1,0 +1,51 @@
+import Hitman07 from "../../images/Hitman07.png";
+import Card from "./Card";
+import Swiper from "../../Swiper.jsx";
+import "./Movies.css";
+import {useState} from "react"
+const Movies=()=>{
+const [query,setQuery]=useState("");
+const filteredItems=movies
+  return (
+ <>
+ <div>
+<div className="search">
+<input type="text" placeholder="Search Movie" value={query}
+ onChange={(e)=>setQuery(e.target.value)}/>
+<span>{query}</span>
+</div>
+<Swiper/>
+</div>
+ <div className="top">
+ <h2>Top Movies</h2>
+</div>
+ <div className="movie-container">
+ 
+ <Card/>
+ <Card/>
+<Card/>
+<Card/>
+<Card/>
+<Card/>
+<Card/>
+</div>
+ <div className="top">
+ <h2>Top Rated</h2>
+</div>
+ <div className="movie-container">
+
+ <Card/>
+ <Card/>
+<Card/>
+<Card/>
+<Card/>
+<Card/>
+<Card/>
+</div>
+ </>
+
+
+)
+
+}
+export default Movies;

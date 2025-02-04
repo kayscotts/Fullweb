@@ -1,0 +1,58 @@
+.navbar{
+ width:100%;
+ min-height:60px;
+ background:black;
+ color:#fff;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:5px 
+}
+.flex1{
+ flex:1;
+ 
+}
+
+.flex2{
+  flex:2;
+}
+.flex3{
+ flex:1;
+ flex-direction:column;
+}
+
+.flex3 span{
+  margin-left:60px;
+
+}
+.ul-flex{
+ display:flex;
+ list-style-type:none;
+ justify-content:space-between;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    min-height: auto; /* Reset min-height */
+    padding: 10px;
+  }
+
+  .flex3 span {
+    margin-left: 1em; /* Adjust margin on smaller screens */
+  }
+
+  .ul-flex {
+    flex-direction: column; /* Stack list items vertically */
+    padding: 10px 0; /* Add some vertical padding */
+  }
+
+  .ul-flex li {
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+}
+
+
+/* ... (Your existing CSS) ... */
+
+/* Media query for larger screens (e.g., desktop) 

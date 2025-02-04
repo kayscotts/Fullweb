@@ -86,7 +86,7 @@ if(user){
  if(user.password===password){
     const token={"token":createToken(res,user._id)};
     res.json(token)
-    createToken(res,user._id);
+    
    } else{res.send("invalid cred")}
  }else{
   res.send("emai or pass missing")
@@ -106,7 +106,7 @@ if(email && password){
  
  const userExists=await User.findOne({email}); 
  if(userExists) return res.status(409);
- const token={name:"token"}
+ 
  res.json(token);
 
  const newUser=new User({email,password})

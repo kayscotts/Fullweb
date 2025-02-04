@@ -32,27 +32,23 @@
 }
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align items to the left */
-    min-height: auto; /* Reset min-height */
+    flex-direction: column; 
+    align-items: flex-start; 
+    min-height: auto; 
     padding: 10px;
   }
 
   .flex3 span {
-    margin-left: 1em; /* Adjust margin on smaller screens */
+    margin-left: 1em;
   }
 
   .ul-flex {
-    flex-direction: column; /* Stack list items vertically */
-    padding: 10px 0; /* Add some vertical padding */
+    flex-direction: column;
+    padding: 10px 0;
   }
 
   .ul-flex li {
-    margin-bottom: 10px; /* Add spacing between list items */
+    margin-bottom: 10px; 
   }
 }
 
-
-/* ... (Your existing CSS) ... */
-
-/* Media query for larger screens (e.g., desktop) 

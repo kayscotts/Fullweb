@@ -22,6 +22,7 @@ const handleSubmit=async (e)=>{
      const result=await sign(data).unwrap()
     console.log("waata",result)
     if(result && result.token){
+     console.log("result token",result.token)
         setIsLogin(true)
         const dat={email}
       Dispatch(email)

@@ -56,8 +56,11 @@ return (
 <div>Email : {email}</div>
 <div>Password: {password}</div>
 </div>
+ <div>
+  hello
  <Link to="/ret">goto ret</Link>
-<div>If you already have an account just <Link to="/login">Login</Link></div>
+</div>
+  <div>If you already have an account just <Link to="/login">Login</Link></div>
 </>
 
 

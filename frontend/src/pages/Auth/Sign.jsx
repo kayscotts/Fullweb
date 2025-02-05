@@ -37,7 +37,7 @@ const handleSubmit=async (e)=>{
  }
 return (
 <>
-<div><h1>Signup Page</h1></div>
+<div><h1>Signup Page pro</h1></div>
 <form onSubmit={handleSubmit}>
 <div>
  <label htmlFor="email">Email</label>

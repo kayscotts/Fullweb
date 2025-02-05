@@ -21,7 +21,7 @@ const handleSubmit=async (e)=>{
    try{
      const result=await sign(data).unwrap()
     console.log("waata",result)
-    if(result){
+    if(result && result.token){
         setIsLogin(true)
         const dat={email}
       Dispatch(email)
@@ -29,7 +29,9 @@ const handleSubmit=async (e)=>{
        Navigate("/");
     }
    }
-   catch(err){}
+   catch(err){
+    console.error("this error",error)
+   }
  }
  }
 return (
